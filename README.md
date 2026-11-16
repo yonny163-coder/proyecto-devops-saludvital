@@ -31,4 +31,6 @@ Desde la carpeta raíz del proyecto, ejecutar:
 docker compose up -d --build
 ## Estado del proyecto
 La aplicación fue desplegada localmente mediante Docker Compose.
-El contenedor Nginx se encuentra operativo y su estado fue verificado mediante Docker.
+
+## Control de versiones
+El proyecto utiliza Git para registrar los cambios mediante commits y ramas de trabajo. La integración de modificaciones se realiza mediante Pull Requests en GitHub.
