@@ -29,3 +29,6 @@ Desde la carpeta raíz del proyecto, ejecutar:
 
 ```bash
 docker compose up -d --build
+## Estado del proyecto
+La aplicación fue desplegada localmente mediante Docker Compose.
+El contenedor Nginx se encuentra operativo y su estado fue verificado mediante Docker.
