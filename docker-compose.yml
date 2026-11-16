@@ -1,0 +1,20 @@
+
+services:
+  saludvital:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: saludvital-web
+
+    ports:
+      - "8080:80"
+
+    restart: unless-stopped
+
+    healthcheck:
+      test: ["CMD", "wget", "-q", "-O", "/dev/null", "http://127.0.0.1/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 5s
